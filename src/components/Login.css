@@ -1,0 +1,247 @@
+/* Computer styles */
+@media (min-device-width: 800px) {
+	.body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100vh;
+		background-image: linear-gradient(#9FB7BF, #656F73);
+	}
+	
+	.login-div {
+		width: 60%;
+		height: 75vh;
+		display: flex;
+	}
+	
+	.login-div-presentation {
+		padding: 5%;
+		background-image: linear-gradient(#4B2D45, #BF9FB9);
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+		gap: 10%;
+	}
+	
+	.login-div-presentation-title {
+		color: white;
+		font-family: 'DynaPuff', cursive;
+		font-size: 3em;
+		font-weight: 400;
+	}
+	
+	.login-div-presentation-text {
+		color: white;
+		text-align: justify;
+	}
+	
+	.login-div-items {
+		padding: 5%;
+		background-color: white;
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	
+	.login-div-items-title {
+		font-weight: 200;
+	}
+	
+	.login-form {
+		display: flex;
+		height: max-content;
+		flex-direction: column;
+		gap: 30px;
+		align-items: center;
+	}
+
+	.input-container {
+        width: 100%;
+		position: relative;
+	}
+
+	.input-container label {
+		pointer-events: none;
+		font-size: 0.9em;
+		position: absolute;
+		top: 0.7em;
+		left: 2%;
+		transition: all .3s ease-in-out;
+		opacity: 0.5;
+	}
+	
+	.input-container input:focus ~ label, .input-container input:valid ~ label {
+		top:-1em;	
+	}
+	
+	.login-form-input {
+		width: 100%;
+        box-sizing: border-box;
+		border-bottom: 1px solid #BF9FB9;
+		padding: 8px 10px;
+		font-size: 1em;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	.login-form-btns {
+        width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.login-form-submit-btn {
+		width: 8em;
+		height: 3em;
+		border-radius: 2px;
+		background-color: rgba(75,45,69,0.75);
+		color: white;
+		cursor: pointer;
+	}
+
+	.login-form-register-btn {
+		width: 8em;
+		height: 3em;
+		border-radius: 2px;
+		border: 1px solid whitesmoke;
+		background-color: lightgray;
+		color: rgba(75,45,69,0.75);
+		cursor: pointer;
+	}
+}
+
+
+
+
+
+
+
+
+
+/* Phone styles */
+@media (max-device-width: 800px) {
+	.body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		background-image: linear-gradient(#9FB7BF, #656F73);
+	}
+	
+	.login-div {
+		width: 100%;
+        height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.login-div-presentation {
+		padding: 5%;
+		background-image: linear-gradient(#4B2D45, #BF9FB9);
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		/* height: 100%; */
+		gap: 20px;
+        box-sizing: border-box;
+	}
+	
+	.login-div-presentation-title {
+		color: white;
+		font-family: 'DynaPuff', cursive;
+		font-size: 3.2em;
+		font-weight: 400;
+	}
+	
+	.login-div-presentation-text {
+		color: white;
+		text-align: justify;
+	}
+	
+	.login-div-items {
+        gap: 50px;
+        box-sizing: border-box;
+		padding: 10%;
+		background-color: white;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	
+	.login-div-items-title {
+		font-weight: 200;
+        font-size: 3em;
+	}
+	
+	.login-form {
+		display: flex;
+		height: max-content;
+		flex-direction: column;
+		gap: 80px;
+		align-items: center;
+	}
+
+	.input-container {
+        width: 100%;
+		position: relative;
+	}
+
+	.input-container label {
+		pointer-events: none;
+		font-size: 1.5em;
+		position: absolute;
+		top: 0.1em;
+		left: 2%;
+		transition: all .3s ease-in-out;
+		opacity: 0.5;
+	}
+	
+	.input-container input:focus ~ label, .input-container input:valid ~ label {
+		top:-1.5em;	
+	}
+	
+	.login-form-input {
+		width: 100%;
+        box-sizing: border-box;
+		border-bottom: 1px solid #BF9FB9;
+		padding: 8px 10px;
+		font-size: 1.5em;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	.login-form-btns {
+        width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.login-form-submit-btn {
+		width: 6em;
+		height: 3em;
+		border-radius: 2px;
+		background-color: rgba(75,45,69,0.75);
+		color: white;
+		cursor: pointer;
+        font-size: 1.5em;
+	}
+
+	.login-form-register-btn {
+		width: 6em;
+		height: 3em;
+		border-radius: 2px;
+		border: 1px solid whitesmoke;
+		background-color: lightgray;
+		color: rgba(75,45,69,0.75);
+		cursor: pointer;
+        font-size: 1.5em;
+	}
+}
+
+button:hover, input[type=submit]:hover {
+	scale: 1.05;
+}
