@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
@@ -13,6 +14,10 @@ function Login() {
 		e.preventDefault();
 		navigate('/register')
 	}
+
+	useEffect(() => {
+		document.title = 'Login Page'
+	}, []);
 	
   	return (
 	    <div className='body'>
